@@ -38,7 +38,7 @@
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder
 {
-    self = [super initWithFrame:frame];
+    self = [super initWithCoder:aDecoder];
     
     if (self){
         [self initBorghetti];
