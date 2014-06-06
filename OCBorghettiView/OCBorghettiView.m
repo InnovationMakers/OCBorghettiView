@@ -159,7 +159,7 @@
         sectionTitleFrame.size.height = self.headerHeight;
         [sectionTitle setFrame:sectionTitleFrame];
         
-        [sectionTitle setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, -5.0f, 0.0f, 0.0f)];
+        [sectionTitle setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 25.0f, 0.0f, 0.0f)];
         [sectionTitle setImageEdgeInsets:UIEdgeInsetsMake(0.0f, self.frame.size.width - 25.0f , 0.0f, 0.0f)];
         
         CGRect sectionViewFrame = [sectionView frame];
@@ -173,8 +173,8 @@
         sectionViewFrame.origin.y = height;
         
         if (self.activeSection == i) {
-            [sectionTitle setImage:[UIImage imageNamed:@"OCBorghettiView.bundle/icon_down_arrow.png"]
-                          forState:UIControlStateNormal];
+//            [sectionTitle setImage:[UIImage imageNamed:@"OCBorghettiView.bundle/icon_down_arrow.png"]
+//                          forState:UIControlStateNormal];
             
             sectionViewFrame.size.height = (self.frame.size.height - (self.numberOfSections * self.headerHeight));
             [sectionView setFrame:CGRectMake(0, sectionViewFrame.origin.y, self.frame.size.width, 0)];
@@ -182,8 +182,8 @@
             if ([sectionView respondsToSelector:@selector(setScrollsToTop:)])
                 [sectionView setScrollsToTop:YES];
         } else {
-            [sectionTitle setImage:[UIImage imageNamed:@"OCBorghettiView.bundle/icon_right_arrow.png"]
-                          forState:UIControlStateNormal];
+//            [sectionTitle setImage:[UIImage imageNamed:@"OCBorghettiView.bundle/icon_right_arrow.png"]
+//                          forState:UIControlStateNormal];
             
             sectionViewFrame.size.height = 0;
             
