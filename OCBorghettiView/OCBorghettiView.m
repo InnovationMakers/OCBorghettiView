@@ -216,7 +216,7 @@
     if (self.hasBorder) {
         if (index > 0) {
             UIView *topBorder = [[UIView alloc] init];
-            topBorder.frame = CGRectMake(0.0f, 0.0f, sectionTitle.frame.size.width, 1.5f);
+            topBorder.frame = CGRectMake(0.0f, 0.0f, sectionTitle.frame.size.width, 1.0f);
             topBorder.backgroundColor = self.headerBorderColor;
             topBorder.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
             if (sectionTitle.subviews.count < 3) [sectionTitle addSubview:topBorder];
